@@ -1,0 +1,35 @@
+.button{
+  padding:6px 24px;
+  background-color: rgb(241, 241, 120);
+  cursor:pointer;
+  font-weight:bold;
+  border:none;
+}
+
+.button:not(.disabled):hover{
+  background-color: rgb(176, 176, 88);
+
+}
+
+.topBar{
+  font-size: 20px;
+  background-color: rgb(44, 148, 193);
+  border:1px solid black;
+}
+
+.fullWidth{
+  width: 100%;
+}
+
+.topBar:hover{
+  background-color: rgb(35, 104, 133);
+}
+
+.disabled{
+  background-color: rgb(111, 110, 110);
+  cursor: not-allowed;
+}
+
+.selected{
+  background-color: aquamarine;
+}

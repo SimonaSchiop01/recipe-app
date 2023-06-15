@@ -1,0 +1,40 @@
+.createRecipe{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredients, .photo{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:flex-end;
+  margin:auto;
+  text-align:center;
+  width:500px;
+  gap:24px;
+}
+
+
+.photo{
+  margin-top:20px;
+}
+
+.category{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  margin-top:20px;
+}
+
+.type{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  margin-top:20px;
+}
+
+.btn{
+  margin-top:20px;
+}

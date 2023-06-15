@@ -1,0 +1,14 @@
+.MyInput{
+  width: 500px;
+  margin-top:20px;
+}
+
+input{
+  width: 100%;
+}
+
+.req{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(216, 75, 75);
+}

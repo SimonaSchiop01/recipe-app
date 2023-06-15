@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import {useEffect} from "react"
+import {Routes, Route} from "react-router-dom";
+import RecipesPage from './pages/RecipesPage/RecipesPage';
+import CreateRecipePage from "./pages/CreateRecipePage/CreateRecipePage"
+import { RecipePage } from './pages/RecipePage/RecipePage';
+import Header from "./component/Header/Header"
+import { RecipesContextProvider } from './contexts/RecipesContext/Recipes.context';
+import EditRecipePage from './pages/EditRecipePage/EditRecipePage';
+
+
 
 function App() {
+
+  
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <RecipesContextProvider>
+    <Header></Header>
+    <div className='latime'>
+      <Routes>
+        <Route path="/recipes" element={<RecipesPage></RecipesPage>}></Route>
+        <Route path="/createRecipe" element={<CreateRecipePage></CreateRecipePage>}></Route>
+        <Route path="/recipe/:id" element={<><RecipePage></RecipePage></>}></Route>
+        <Route path="/editRecipe/:id" element={<EditRecipePage></EditRecipePage>}></Route>
+      </Routes>
+      </div>
+      </RecipesContextProvider>
+    </>
   );
 }
 

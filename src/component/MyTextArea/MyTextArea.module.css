@@ -1,0 +1,14 @@
+.MyTextArea{
+  margin-top:20px;
+  width:500px;
+}
+
+textarea{
+  width:100%
+}
+
+.req{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(216, 75, 75);
+}
